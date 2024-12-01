@@ -1,0 +1,397 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #000000; /* Black background */
+    color: #333333; /* Default dark gray text */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    background-image: url("https://images.pexels.com/photos/7641028/pexels-photo-7641028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+/* Header */
+header {
+    background-color: #E0E0E0; /* Light gray for header */
+    padding: 8px 3%; /* Adjusted padding for a shorter header */
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Flex container for logo, motto, and navigation */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Logo */
+header .logo img {
+    width: 100px; /* Adjusted logo size */
+    height: auto;
+    filter: brightness(1.4);
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+/* Motto */
+header .motto h1 {
+    font-family: 'Dancing Script', cursive; /* Fun, cursive font */
+    font-size: 1.50rem; /* Adjusted font size */
+    color: #333333; /* Dark gray for motto */
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Links */
+nav.nav-links {
+    display: flex;
+    gap: 15px; /* Adjusted gap between links */
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Navigation Links Styling */
+nav.nav-links a {
+    text-decoration: none;
+    color: #333333; /* Dark gray for links */
+    font-size: 1.1rem; /* Slightly larger font size for navigation links */
+    font-weight: 600;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav.nav-links a:hover {
+    color: #816f6f; /* Lighter gray on hover */
+    transform: scale(1.05);
+}
+
+/* Utility Links */
+.utility-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    border-top: 2px solid #000000;
+    padding-top: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.utility-links .cart-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.utility-links .cart-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.utility-links .cart-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Top Utility Links */
+.utility-links .top-links {
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 10px; /* Space between the links */
+    font-size: 0.9rem; 
+    flex-wrap: nowrap; 
+}
+
+
+.utility-links .top-links a {
+    text-decoration: none;
+    color: #000000; /* Lighter gray for utility links */
+    transition: color 0.3s ease;
+}
+
+.utility-links .top-links a:hover {
+    color: #c5bdbd; /* Darker gray on hover */
+}
+
+/* Search Bar */
+.utility-links .search-bar-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 400px; /* Adjust this value to move the search bar slightly left */
+}
+
+
+.utility-links .search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 2px 8px; /* Further reduce the top and bottom padding */
+    border: 1px solid #E5E5E5;
+    max-width: 280px; /* Controls width, adjust as necessary */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.utility-links .search-bar input {
+    border: none;
+    outline: none;
+    font-size: 0.75rem; /* Further reduce font size */
+    padding: 3px; /* Reduce padding inside the input field */
+    width: 80%;
+    height: 24px; /* Reduce height even more */
+}
+
+.utility-links .search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.utility-links .search-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+/* Main Content */
+.home-content {
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center content */
+    background-color: transparent; /* Makes the background transparent */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+    width: 100%;
+    color: #FFFFFF; /* White text in main content */
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-bottom: 40px; /* Add space between sections */
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #FFFFFF; /* White text for hero section titles */
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #FFFFFF; /* White text for hero paragraph */
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* Dark gray button */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #777777; /* Lighter gray on hover */
+}
+
+/* Product Grid Section */
+.new-arrivals, .hot-deals {
+    margin-bottom: 40px;
+    width: 100%; /* Full width for sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the titles and grids */
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #FFFFFF; /* White text for section titles */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Grid for products and deals */
+.product-grid, .deal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    justify-items: center; /* Center items in the grid */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 10px;
+    margin-left: 140px; 
+}
+
+/* Product and Deal Items */
+.product, .deal {
+    background-color: #F5F5F5; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product img, .deal img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product h3, .deal h3 {
+    font-size: 1.2rem;
+    color: #333333; /* Dark gray for titles */
+    margin-bottom: 10px;
+}
+
+.product p, .deal p {
+    font-size: 1rem;
+    color: #777777; /* Lighter gray for text */
+}
+
+.product:hover, .deal:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-motto {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin-left: -130px; /* This moves the quick links section slightly to the left */
+}
+
+.footer-links h3,
+.footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .utility-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        max-width: 100%; /* Full width on smaller screens */
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    .product-grid, .deal-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    }
+}
